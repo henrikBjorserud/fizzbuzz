@@ -1,15 +1,17 @@
 def main():
 
-    for n in range(1, 101):
-        if n % 3 == 0 or n % 5 == 0:
-            if n % 3 == 0 and n % 5 == 0:
-                print("FizzBuzz")
-            elif n % 3 == 0:
-                print("Fizz")
-            else:
-                print("Buzz")
+    for i in range(1, 101):
+        if i == 42:
+            print("Answer to the Ultimate Question of Life, the Universe, and Everything")
+
+        if i % 3 == 0 and i % 5 == 0:
+            print("fizzbuzz")
+        elif i % 3 == 0:
+            print("fizz")
+        elif i % 5 == 0:
+            print("buzz")
         else:
-            print(n)
+            print(i)
 
 
 
